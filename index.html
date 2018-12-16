@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>E-commerce</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">E-commerce</a>
+                    </div>
+
+                    <!-- Collect the nav links -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Canasta
+                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Salir</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar camisetas">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="hidden-xs hidden-sm col-md-12">
+                        <h4>Categorías</h4>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Todo
+                                <span class="badge">100</span>
+                            </a>
+                            <a href="#" class="list-group-item">Hombre
+                                <span class="badge">4</span>
+                            </a>
+                            <a href="#" class="list-group-item">Mujer
+                                <span class="badge">12</span>
+                            </a>
+                            <a href="#" class="list-group-item">Hipster
+                                <span class="badge">24</span>
+                            </a>
+                            <a href="#" class="list-group-item">Metal
+                                <span class="badge">6</span>
+                            </a>
+                            <a href="#" class="list-group-item">Universidad
+                                <span class="badge">5</span>
+                            </a>
+                            <a href="#" class="list-group-item">Deportiva
+                                <span class="badge">8</span>
+                            </a>
+                            <a href="#" class="list-group-item">Rayas
+                                <span class="badge">11</span>
+                            </a>
+                            <a href="#" class="list-group-item">Apretada
+                                <span class="badge">19</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg" alt="Imagen 1">
+                                </div>
+                                <div class="item">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="item">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg" alt="Imagen 3">
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Camiseta 1">
+                            <div class="caption">
+                                <h3>Hipster Ultimate</h3>
+                                <p>La camiseta ideal para hipsters.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary" role="button">$229
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" data-show="false">
+                                        Detalles
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h4 class="modal-title" id="myModalLabel">Hipster Ultimate</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="alert alert-info" role="alert">
+                                                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                                                        Este producto está agotado.
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <a href="#" class="thumbnail">
+                                                                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Camiseta 1">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Precio:
+                                                                <strong>$229</strong>
+                                                            </p>
+                                                            <p>
+                                                                Calificación:
+                                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                            </p>
+
+                                                            <p>
+                                                                <button type="button" class="btn-warning">Hipster</button>
+                                                                <button type="button" class="sport-tag">Deportiva</button>
+                                                            </p>
+                                                            <p class="blue">
+                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                                                Agregar a los deseos
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Descripción</a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">Comentarios</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane active" id="description">
+                                                                </br>
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                                                </p>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane" id="comment">
+                                                                </br>
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading">Anthony comentó hace 2 días</div>
+                                                                    <div class="panel-body">
+                                                                        Ésta camiseta está increíble, la quiero!
+                                                                    </div>
+                                                                </div>
+                                                                <textarea rows="3" cols="78" placeholder="  Ingresa tu comentario"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" alt="Camiseta 2">
+                            <div class="caption">
+                                <h3>On Motion Live</h3>
+                                <p>Perfecta para salidas rocosas.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary" role="button">$229
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default" role="button">Detalles</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" alt="Camiseta 3">
+                            <div class="caption">
+                                <h3>Underground Max</h3>
+                                <p>Para los amantes del underground.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary" role="button">$229
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default" role="button">Detalles</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" alt="Camiseta 4">
+                            <div class="caption">
+                                <h3>Santo Domingo Tigers</h3>
+                                <p>En honor a este gran equipo.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary" role="button">$229
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default" role="button">Detalles</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="thumbnail">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" alt="Camiseta 5">
+                            <div class="caption">
+                                <h3>Una camiseta más</h3>
+                                <p>Nunca obra una así de cool.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary" role="button">$229
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-default" role="button">Detalles</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
